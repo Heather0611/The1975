@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 1975</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/bernoru" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sauce-one" rel="stylesheet">
+    <style>
+      body{
+        background: linear-gradient(90deg,  #000000, #737373);
+        min-height: 100vh;
+    }
+    </style> 
+</head> 
+<body>
+    <header>
+        <nav>
+          <div class="about-container"></div>
+            <ul class="nav">
+              <li><a class="navs name vl">THE<span class="name1" style="color: #6257e3">1975</span></a></li>
+              <li><a class="navs" href="profile.html">Profiles</a></li>
+              <li><a class= "navs" href="topsongs.html">Top Songs</a></li>
+              <li><div class="about-button" id="aboutButton">About</div></li>
+                <div class="about-content" id="aboutContent">
+                  <p>This website is a fan-made project and is not affiliated with or endorsed by any official entity. The content provided here is created by a for fans,
+                    <br> and is intended solely for informational and entertainment purposes. All trademarks, logos, and images are the property of their respective owners.</p>
+                </div>
+            </div>
+            </ul>
+          </nav>
+    </header>
+    <main>
+      <div>
+      <p class="description"><strong>The 1975</strong> are a British band consisting of four members, Ross MacDonald,
+        <br class="br"> Adam Hann, Matty Healy, and George Daniel, from Manchester, England. <br>
+        <br> The members of the band met during high school and started playing
+        <br class="br"> together in 2002. They went by an array of different names throughout
+        <br class="br"> their career, such as Drive Like I Do and Bigsleep, until settling on 'The 1975'.
+      </div>    
+      </div>
+      <div>
+      <img class="photo shadow" src="images/_con.jpg" alt="concert">
+      </div>
+    </main>
+    <footer>
+      <div>
+      <a class="viewhistory hborder" href="history.html">View History</a> 
+    </div>
+       <div id="container1">
+          <div id="content1">
+            </div>
+              <div id="arrow1" onclick="toggleContainer()">&#9654;</div>
+              <div>
+            </div>
+                 <a style="margin-left: -100px;" href="https://www.facebook.com/the1975/" target="_blank">
+                  <img class="ssize" src="images/facebook.png" alt="facebook">
+                    </a>
+                     <a href="https://www.instagram.com/the1975/" target="_blank">
+                      <img class="ssize" src="images/instagram.png" alt="instagram">
+                      </a>
+                      <a href="https://www.youtube.com/channel/UC_LfW1R3B0of9qOw1uI-QNQ" target="_blank">
+                        <img class="ssize" src="images/youtube.png" alt="youtube">
+                        </a>
+                        <a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank">
+                          <img class="ssize" src="images/spotify.png" alt="spotify">
+                          </a>
+            </div>
+            <div>
+              <div class="sites2 hide">
+                <a href="https://www.facebook.com/the1975/" target="_blank">
+                  <img class="ssize1" src="images/facebook.png" alt="facebook">
+                    </a>
+                     <a href="https://www.instagram.com/the1975/" target="_blank">
+                      <img class="ssize1" src="images/instagram.png" alt="instagram">
+                      </a>
+                      <a href="https://www.youtube.com/channel/UC_LfW1R3B0of9qOw1uI-QNQ" target="_blank">
+                        <img class="ssize1" src="images/youtube.png" alt="youtube">
+                        </a>
+                        <a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank">
+                          <img class="ssize1" src="images/spotify.png" alt="spotify">
+                          </a>
+                        </div>        
+    </footer>
+
+    <script>
+      document.getElementById('aboutButton').addEventListener('click', function() {
+          var content = document.getElementById('aboutContent');
+          var button = document.getElementById('aboutButton');
+          if (content.classList.contains('show')) {
+              content.classList.remove('show');
+              button.classList.remove('underline');
+          } else {
+              content.classList.add('show');
+              button.classList.add('underline');
+          }
+        
+      });
+
+      function toggleContainer() {
+        var container = document.getElementById('container1');
+        container.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
